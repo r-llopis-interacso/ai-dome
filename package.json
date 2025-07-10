@@ -1,0 +1,9 @@
+{
+  "name": "ai-dome",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/hub",
+    "apps/cli"
+  ]
+}
