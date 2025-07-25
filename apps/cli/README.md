@@ -75,8 +75,9 @@ node bin/guideline-sync.js \
 📋 Total de dependencias: 12
 🚀 Conectando con el Hub...
 ✅ Respuesta recibida en 234ms
-✅ Directrices sincronizadas exitosamente!
-📄 Archivo guardado: directrices.md (8.2 KB)
+✅ Documentación generada exitosamente:
+   - ai-readme.md (12 KB)
+   - copilot-instructions.md (8 KB)
 
 📊 Estadísticas:
   • Dependencias analizadas: 12
@@ -193,6 +194,30 @@ pnpm install
 
 # Probar CLI
 node bin/guideline-sync.js --help
+```
+
+### Uso Global (Recomendado para Desarrollo)
+
+Para probar el comando `guideline-sync` en cualquier otro proyecto de tu máquina sin necesidad de publicarlo en un registro como npm, puedes crear un enlace simbólico global.
+
+1.  **Asegúrate de estar en el directorio del CLI:**
+    ```bash
+    cd apps/cli
+    ```
+
+2.  **Crea el enlace global:**
+    ```bash
+    pnpm link --global
+    ```
+
+Ahora puedes ir a cualquier otro directorio en tu terminal y ejecutar `guideline-sync init` (o cualquier otro comando) como si fuera una herramienta instalada globalmente. Cualquier cambio que hagas en el código de `apps/cli` se reflejará inmediatamente.
+
+#### Desvincular el comando
+
+Cuando ya no necesites el enlace global, puedes eliminarlo ejecutando el siguiente comando desde el mismo directorio `apps/cli`:
+
+```bash
+pnpm unlink --global
 ```
 
 ### Estructura del Proyecto

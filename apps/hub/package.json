@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@ai-dome/hub",
   "version": "1.0.0",
   "description": "Website template for Payload",
   "license": "MIT",
@@ -23,6 +23,7 @@
     "test:int": "cross-env NODE_OPTIONS=--no-deprecation vitest run --config ./vitest.config.mts"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@payloadcms/admin-bar": "3.46.0",
     "@payloadcms/db-postgres": "3.46.0",
     "@payloadcms/live-preview-react": "3.46.0",

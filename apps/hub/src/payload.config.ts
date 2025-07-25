@@ -19,6 +19,7 @@ import { plugins } from './plugins'
 import { defaultLexical } from '@/fields/defaultLexical'
 import { getServerSideURL } from './utilities/getURL'
 import { generarContextoHandler } from './endpoints/generar-contexto'
+import { generarDocumentacionCompleta } from './endpoints/generar-documentacion-completa'
 import healthHandler from './endpoints/health'
 
 const filename = fileURLToPath(import.meta.url)
@@ -81,6 +82,11 @@ export default buildConfig({
       path: '/health',
       method: 'get',
       handler: healthHandler,
+    },
+    {
+      path: '/generar-documentacion-completa',
+      method: 'post',
+      handler: generarDocumentacionCompleta,
     },
   ],
   plugins: [

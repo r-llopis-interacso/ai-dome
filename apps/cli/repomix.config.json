@@ -1,0 +1,56 @@
+{
+  "$schema": "https://repomix.com/schemas/latest/schema.json",
+  "output": {
+    "style": "plain",
+    "fileSummary": true,
+    "directoryStructure": true,
+    "files": false,
+    "removeComments": false,
+    "removeEmptyLines": true,
+    "showLineNumbers": false,
+    "includeEmptyDirectories": false,
+    "copyToClipboard": false
+  },
+  "ignore": {
+    "useGitignore": true,
+    "useDefaultPatterns": true,
+    "customPatterns": [
+      "**/node_modules/**",
+      "**/.next/**",
+      "**/.git/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/coverage/**",
+      "*.log",
+      ".env*",
+      ".DS_Store",
+      "*.lock",
+      "**/pnpm-lock.yaml",
+      "**/package-lock.json",
+      "**/yarn.lock",
+      "*.map",
+      "**/public/**",
+      "**/assets/**",
+      "**/static/**",
+      "**/.cache/**",
+      "**/tmp/**",
+      "**/temp/**"
+    ]
+  },
+  "include": [
+    "package.json",
+    "**/*.js",
+    "**/*.ts",
+    "**/*.jsx",
+    "**/*.tsx",
+    "**/*.md",
+    "**/*.json",
+    "**/*.yml",
+    "**/*.yaml",
+    "**/*.toml",
+    "**/*.config.*"
+  ],
+  "security": {
+    "enableSecurityCheck": true
+  }
+}
